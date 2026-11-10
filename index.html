@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IRL VIBES | Real People. Real Moments. Real Vibes.</title>
+  <meta name="description" content="IRL VIBES: photos, videos, college memories,campus chaos and cringe from our friend group.">
+  <link rel="stylesheet" href="styles.css">
+  <link
+  rel="icon"
+  type="image/png"
+  href="https://res.cloudinary.com/bpxx0rjd/image/upload/v1794326716/logo.png"
+/>
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+<a href="#home" class="logo" aria-label="IRL VIBES home">
+    <img src="https://res.cloudinary.com/bpxx0rjd/image/upload/v1794326716/logo.png"  alt="IRL VIBES" class="nav-logo"/> IRL VIBES</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#memories" class="nav-link">Memories</a></li>
+      <li><a href="#memories" class="nav-link" data-filter="photo">Photos</a></li>
+      <li><a href="#memories" class="nav-link" data-filter="video">Videos</a></li>
+      <li><a href="#about" class="nav-link">About Us</a></li>
+      <li><a href="#" class="ig-icon" data-ig aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z"/></svg></a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">IRL VIBES</p>
+        <h1 style="margin-top:20px">
+          <span>US.</span>
+          <span>Being.</span>
+          <span>Us.</span>
+        </h1>
+        <p class="hero-sub">Every picture tells a story. Every video holds a memory. Welcome to IRL VIBES.</p>
+        <div class="hero-cta">
+          <a href="#memories" class="btn btn-primary">Explore Memories</a>
+          <a href="#" class="btn btn-ghost" data-ig>View Instagram</a>
+        </div>
+      </div>
+      <div class="float-stack" id="floatStack" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section id="memories">
+    <div class="container">
+      <div class="gallery-head reveal">
+        <div>
+          <p class="eyebrow">The archive</p>
+          <h2 class="section-title">Memories</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Filter memories" id="filters">
+          <button class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="photo" aria-pressed="false">Photos</button>
+          <button class="chip" data-filter="video" aria-pressed="false">Videos</button>
+          <button class="chip" data-filter="college" aria-pressed="false">College</button>
+          <button class="chip" data-filter="friends" aria-pressed="false">Friends</button>
+          <button class="chip" data-filter="funny moments" aria-pressed="false">Funny Moments</button>
+          <button class="chip" data-filter="content" aria-pressed="false">Content</button>
+        </div>
+      </div>
+      <div class="masonry" id="gallery"></div>
+      <p class="empty" id="empty">Nothing here yet. Check back soon.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <p class="eyebrow">About us</p>
+        <h2 class="section-title">More than friends, it's a whole vibe.</h2>
+      </div>
+      <div class="reveal">
+        <p>IRL VIBES is all about the people, laughter, crazy moments and unforgettable memories that make life special. From random college days to special celebrations, every moment deserves a place here.</p>
+        <div class="stats" style="margin-top:36px">
+          <div class="stat glass"><b id="statPhotos">0</b><span>Photos</span></div>
+          <div class="stat glass"><b id="statVideos">0</b><span>Videos</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="ig-cta glass glow reveal">
+        <p class="eyebrow">Instagram</p>
+        <h2 class="section-title" style="margin-top:14px">The vibes don't end here.</h2>
+        <p>Follow us on Instagram and stay connected with our latest moments, memories and madness.</p>
+        <a href="#" class="btn btn-primary" data-ig>
+          <svg class="icon" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5z"/></svg>
+          Follow on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="logo"><span class="logo-mark">IV</span>IRL VIBES</a>
+        <p>Our friend group, documented. College days,funny moments,content and the random moments in between.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#memories">Memories</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul><li><a href="#" data-ig>Instagram</a></li></ul>
+      </div>
+    </div>
+    <div class="copy" id="copyright">
+  <div>© 2026 IRL VIBES. All Rights Reserved.</div>
+  <div class="developed-by">
+    Developed by <span>Bunny</span> ❤️
+  </div>
+</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Media viewer">
+  <span class="lb-count" id="lbCount"></span>
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous"><svg class="icon" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next"><svg class="icon" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/></svg></button>
+  <p class="lb-caption" id="lbCaption"></p>
+  <p class="lb-hint">← → to navigate · Esc to close · click photo to zoom</p>
+</div>
+
+<script src="site.js"></script>
+<script src="media.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
